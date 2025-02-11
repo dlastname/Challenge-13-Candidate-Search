@@ -1,8 +1,18 @@
 import { useState, useEffect } from 'react';
-import { searchGithub, searchGithubUser } from '../api/API';
+import formatCandidates from '../util/formatCandidate';
+import Candidate from '../interfaces/Candidate.interface';
 
 const CandidateSearch = () => {
-  return <h1>CandidateSearch</h1>;
+  const [candidates, setCandidates] = useState<Candidate[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const fetchCandidates
+  })
+  return ( 
+  <h1>CandidateSearch</h1>
+
+  )
 };
 
 export default CandidateSearch;
