@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter Tight", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -84,7 +84,24 @@ main {
   align-items: center;
 }
 
+th,
+td {
+  padding: 10px 15px;
+}
+
+td a {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+td a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 tr {
+  padding: 10px;
   border-radius: 10px;
   background-color: #000;
   color: white;
@@ -118,4 +135,16 @@ tbody tr:nth-child(odd) {
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+.candidates {
+  flex: wrap;
+}
+
+.candidate-options img {
+  width: 100%;
+}
+
+.candidate-options {
+  align-items: center;
 }
