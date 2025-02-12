@@ -53,11 +53,11 @@ const CandidateSearch = () => {
   };
 
   return (
-    <div>
+    <div className="candidates">
       <h1>Candidate Search</h1>
       {currentCandidate ? (
         <>
-          <div className="test">
+          <div className="candidate-options">
             <img
               src={
                 currentCandidate.avatar_url ||

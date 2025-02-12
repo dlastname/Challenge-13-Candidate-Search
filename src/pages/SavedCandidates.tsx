@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Candidate from "../interfaces/Candidate.interface";
-import formatCandidates from "../util/formatCandidate";
 
 const SavedCandidates = () => {
   const [likedCandidates, setLikedCandidates] = useState<Candidate[]>([]);
@@ -14,7 +13,7 @@ const SavedCandidates = () => {
   }, []);
 
   // Function to remove a candidate
-  const handleReject = (index) => {
+  const handleReject = (index: number) => {
     const updatedCandidates = likedCandidates.filter((_, i) => i !== index);
 
     // Update state and localStorage
@@ -55,7 +54,6 @@ const SavedCandidates = () => {
                       href={candidate.html_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      
                     >
                       {candidate.name
                         ? `${candidate.login} (${candidate.name})`
