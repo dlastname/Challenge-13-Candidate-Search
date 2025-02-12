@@ -84,7 +84,23 @@ main {
   align-items: center;
 }
 
+th, td {
+  padding: 10px 15px;
+}
+
+td a {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+td a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 tr {
+  padding: 10px;
   border-radius: 10px;
   background-color: #000;
   color: white;
@@ -119,3 +135,6 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+
+
+

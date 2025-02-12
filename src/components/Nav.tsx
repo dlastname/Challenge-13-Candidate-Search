@@ -15,17 +15,18 @@ const Nav = () => {
       >
         Home
       </Link>
-      ,
+
       <Link
         key={2}
         className={
-          currentPage === "/SavedCandidates" ? "active nav-link nav-item" : "nav-link nav-item"
+          currentPage === "/SavedCandidates"
+            ? "active nav-link nav-item"
+            : "nav-link nav-item"
         }
         to="/SavedCandidates"
       >
         Potential Candidates
       </Link>
-      ,
     </div>
   );
 };
