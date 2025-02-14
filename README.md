@@ -2,6 +2,8 @@
 
 ## Description
 
+A link to the deployed site can be found in the [Usage](#usage) section
+
 This project is a candidate search application that allows employers to search for potential candidates by retrieving data from the GitHub API. The front end is built with TypeScript, and the application is deployed on Render.
 
 ## Table of Contents
@@ -21,6 +23,9 @@ npm install
 Ensure you have a GitHub Personal Access Token (PAT) set up to increase the API rate limit. The .env file should contain your GitHub token.
 
 ## Usage
+
+[Deployed Site on Render](https://challenge-13-candidate-search-1.onrender.com)
+
 
 Once the dependencies are installed, run the application using the following command:
 
